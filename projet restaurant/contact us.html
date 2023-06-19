@@ -1,0 +1,85 @@
+<html>
+  <head>
+<style>
+
+.contactContainer {
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 20px;
+    margin: 7px;
+}
+
+.contactContainer form {
+    display: inline-block;
+    margin: 30px auto;
+    text-align: left;
+
+}
+.contactContainer img {
+    display: inline-block;
+    
+
+}
+
+
+.buttonHolder {
+    text-align: center;
+}
+
+input[type=Text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 2px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=Submit] {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    align-items: center;
+}
+
+input[type=Submit]:hover {
+    background-color: white;
+    color: gray;
+}
+
+.twoContainer{
+    display: flex;
+}    
+
+.twoContainer img {
+    width: 500px;
+}
+</style>
+  </head>
+  <body>
+    <div class="twoContainer">
+      <img src="R.jpg"  height="100px" width="1000px" alt="contact image">
+      
+      <div class="contactContainer">
+          <form action="https://formspree.io/lyndall@lyndallwalker.com" method="POST">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe">
+      
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder=" " style="height:200px"></textarea>
+      
+              <div class="buttonHolder">
+                  <input type="submit" value="Submit">
+              </div>
+          </form>
+      </div>
+      </div>
+  </body>
+</html>

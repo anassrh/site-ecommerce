@@ -1,0 +1,388 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+.button {
+  background-color: transparent; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  
+  background-color: transparent; 
+  color: rgb(255, 255, 255); 
+  border: 2px solid #dfdfdf;
+}
+
+.button1:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+    *{
+  margin:0;
+  padding:0;
+  font-family:verdana;
+}
+
+nav{
+  width: 100%;
+  height: 100px;
+  position: relative;
+  line-height: 50px;
+background-color: transparent;
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.5s all;
+}
+nav ul li:hover{
+  background-color:rgb(255, 255, 255);
+}
+nav ul li a{
+  text-decoration:none;
+  color: #fff;
+  padding: 30px;
+}
+nav ul li a:hover{
+  text-decoration: none;
+  color: #000000;
+  padding: 30px;
+  text-decoration: yes;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.container1 {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.container1 .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, ); /* Fallback color */
+  background: rgba(0, 0, 0, 0.9); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+#footer {
+  background: #292727;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #f0f0f0;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #46423b;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #fffaf1;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+.gg-phone {
+   box-sizing: border-box;
+   position: relative;
+   display: block;
+   width: 22px;
+   height: 22px;
+   transform: scale(var(--ggs,1))
+}
+.gg-phone::after,
+.gg-phone::before {
+   content: "";
+   display: block;
+   box-sizing: border-box;
+   position: absolute
+}
+.gg-phone::after {
+   width: 18px;
+   height: 18px;
+   border-top-left-radius: 1px;
+   border-bottom-right-radius: 1px;
+   border-bottom-left-radius: 12px;
+   border-left: 4px solid;
+   border-bottom: 4px solid;
+   left: 2px;
+   bottom: 2px;
+   background:
+      linear-gradient(
+         to left,
+         currentColor 10px,
+         transparent 0
+      ) no-repeat right 11px/6px 4px,
+      linear-gradient(
+         to left,
+         currentColor 10px,
+         transparent 0
+      ) no-repeat -1px 0/4px 6px
+}
+.gg-phone::before {
+   width: 20px;
+   height: 20px;
+   border: 6px double;
+   border-top-color: transparent;
+   border-bottom-color: transparent;
+   border-left-color: transparent;
+   border-radius: 50%;
+   transform: rotate(-45deg);
+   bottom: 2px;
+   left: 2px
+}
+input[type=text], select ,textarea{
+  width: 200px;
+  padding: 12px 20px;
+    margin: 8px 0;
+    color: #dfdfdf;
+   background-color: transparent;
+  display: inline-block;
+  border: 3px solid #f7f6f6;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 150px;
+  padding: 12px 20px;
+    margin: 8px 0;
+   background-color: transparent;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=time], select {
+  width: 150px;
+  padding: 12px 20px;
+    margin: 8px 0;
+   background-color: transparent;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 200px;
+  padding: 12px 20px;
+    margin: 8px 0;
+    color: #dfdfdf;
+   background-color: transparent;
+  display: inline-block;
+  border: 3px solid #f3efef;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+  
+  
+  .button2 {
+    background-color: rgb(240, 232, 232); 
+    color: rgb(8, 7, 7); 
+    border: 2px solid #f3f1f1;
+    
+  }
+  
+  .button2:hover {
+    background-color: #0c0808;
+    color: rgb(235, 225, 225);
+    
+  }
+  
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <img src="R.jpg"  style="width:100% ;height: 200%;">
+  <div class="content">
+    
+    
+  <div id="abc">
+            <nav><img src="log1.jpg" width="100px" height="100px"> 
+                <ul>
+                  
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Localisation</a></li>
+                    <li><a href="file:///C:/Users/HP/Desktop/restaurant/reservation.html" target="_blank">Reservation</a></li>
+                    
+                </ul>
+            </nav></div>
+            <br><br><br><br>
+            <center> <h4> BIENVENUE AU</h4><br>
+                <h1> RESTAURANT DAR LWALI</h1><br>
+           <h3><u>ABOUT US</u></h3> <br><br>
+            <p>Le restaurant DAR LWALI est Situé dans le cœur de la médina de Marrakech, est parmis des ancien restaurant a Marrakech.</p> 
+            <p> le Restaurant DAR LWALI est foundé en 1974  qui mélange entre des différentes cuisines du monde avec la cuisine marocaine traditionnelle.</p>
+            <p>DAR LWALI a des meilleurs chef de cuisine qui ont une rich exprience dans ce domaine de cuisine.</p>
+            <p>le restaurant presente des meilleurs plats et repas avec un bonne service par tous ces employes.</p>
+           
+            <br><br><br>
+            <a href=""><button class="button button1"><h4>Voir Menu</h4></button></a>
+            </center>
+            <br><br><br>
+       
+        
+        
+  </div>
+</div>
+<center>
+    <h1 style="text-decoration:  underline; ">Contact Us</h1><br><br>
+<div>
+<form  action="">
+    <label for="fname" style="color: #0f0f0f;">Prenom</label>
+  <input  type="text" id="fname" name="firstname"  placeholder= prenom style="color: #050505;">
+  <label for="iname" style="color: #0c0b0b;">Nom</label> 
+  <input type="text" id="lname" name="lastname" placeholder=Nom style="color: #0c0b0b;">
+  <label for="email" style="color: #0c0c0c;">email</label>
+  <input type="email" id="email" name="email" placeholder=email style="color: #0e0d0d;"><br><br>
+  <center><label for="message">Message</label></center>
+  <textarea id="mesage" name="message" placeholder="message" style="width: 400px;"></textarea>
+
+<center> <a href=""><button class="button button2"><strong>envoyer</strong></button></a></center>
+
+</form> 
+
+</div></center>
+<br>
+<br><br><br><br>
+<div class="container1">
+  <img src="op.jpg" alt="Notebook" style="width:100%; height: 500px;">
+  <div class="content">
+    
+<center><h1 style="font-size: 70px; text-decoration:  underline;">reserver votre table</h1></center><br><br>
+<center>
+<div>
+  <form action="file:///C:/Users/HP/Desktop/restaurant/home.html">
+      <label for="fname" style="color: #ccc;">Prenom</label>
+    <input type="text" id="fname" name="firstname"  placeholder= prenom style="color: #ccc;">
+    <label for="fname" style="color: #ccc;">Nom</label>
+    <input type="text" id="lname" name="lastname" placeholder=Nom style="color: #ccc;">
+    <label for="fname" style="color: #ccc;">Telephone</label>
+    <input type="text" id="lname" name="lastname" placeholder=Telephone style="color: #ccc;">
+    <label for="fname" style="color: #ccc;">email</label>
+    <input type="email" id="email" name="email" placeholder=email style="color: #ccc;"><br><br>
+     <label for="fname" style="color: #ccc;">pays</label>
+    <input type="text" id="country" name="country" placeholder=pays style="color: #ccc;">
+   <label for="fname" style="color: #ccc;">personne</label>
+    <select  id="persoone" name="personne" style="color: #ccc;">
+      <option value="1" style="color: #000000;">1</option>
+      <option value="2" style="color: #000000;">2</option>
+      <option value="3"style="color: #000000;">3</option>
+      <option value="4"style="color: #000000;">4</option>
+      <option value="5"style="color: #000000;">5</option>
+      <option value="6"style="color: #000000;">6</option>
+      <option value="7"style="color: #000000;">7</option>
+      <option value="8"style="color: #000000;">8</option>
+    </select>
+    <label for="fname" style="color: #ccc;">Date</label>
+    <input type="date" id="fname" name="firstname"  placeholder= prénom style="color: #ccc;">
+    <label for="fname" style="color: #ccc;">Date</label>
+    <input type="time" id="fname" name="firstname"  placeholder= prénom style="color: #ccc;">
+  </form>
+</div>
+<br>
+<a href=""><button class="button button1"><strong>Reserver</strong></button></a>
+</center>
+</div>
+</div>
+<footer id="footer">
+  <div class="container">
+    <h3>RIAD LWALI</h3>
+    <p>endroit merveilleux croire on nous.</p>
+    <pre style="font-size: 20px;"><i class="gg-phone">     +212658587744</i></pre>
+    <div class="social-links">
+      <a href="#" class="twitter"></a>
+      <a href="#" class="facebook"></a>
+      <a href="#" class="instagram"></a>
+    </div>
+    <div class="copyright">
+      © Copyright Restaurant RIAD LWALI
+    </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
